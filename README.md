@@ -32,11 +32,11 @@ Left Hand: Rotate wrist to Steer (Calculates roll angle relative to the horizon)
 
 #### Hand Tracking in Action
 
-<img width="745" height="522" alt="image" src="https://github.com/user-attachments/assets/15f4dafc-bdb3-4d05-9446-2f01208cad9c" />
+<img width="650" height="296" alt="image" src="https://github.com/user-attachments/assets/15f4dafc-bdb3-4d05-9446-2f01208cad9c" />
 
 #### Task Completion
 
-<img width="1600" height="699" alt="image" src="https://github.com/user-attachments/assets/5b782a4b-fbe6-4acb-8950-b6c7cab0e2a0" />
+<img width="650" height="296" alt="image" src="https://github.com/user-attachments/assets/5b782a4b-fbe6-4acb-8950-b6c7cab0e2a0" />
 
 ### 🛠️ Technical Implementation
 
