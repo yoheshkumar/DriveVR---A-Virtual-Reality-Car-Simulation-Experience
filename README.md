@@ -1,12 +1,12 @@
-DriveVR: A Controller-Less Virtual Reality Car Simulator
+## DriveVR: A Controller-Less Virtual Reality Car Simulator
 
-📝 Overview
+### 📝 Overview
 
 DriveVR is a fully immersive virtual reality driving simulator developed for the Oculus Quest 2. Unlike traditional VR driving games that rely on physical controllers or joysticks, DriveVR is controlled entirely through intuitive hand gestures.
 
 Users can grip a virtual steering wheel in mid-air to steer and use a natural pinch gesture to control acceleration and braking. The project features a realistic physics engine built from scratch using Unity's WheelCollider system, ensuring the car feels grounded and responsive.
 
-✨ Key Features
+### ✨ Key Features
 
 🚫 Controller-Free Input: Uses the Oculus Hand Tracking SDK to map real-time hand movements to vehicle controls.
 
@@ -20,61 +20,27 @@ Left Hand: Rotate wrist to Steer (Calculates roll angle relative to the horizon)
 
 🛠️ Optimized for Quest 2: Built with ARM64 architecture and IL2CPP scripting backend for high-performance, standalone VR.
 
-🎮 How to Play
+### 🎮 How to Play
 
-Action
+<img width="788" height="286" alt="image" src="https://github.com/user-attachments/assets/6e0ae5e5-4cf3-4ea7-a87e-6182bbd3f1ea" />
 
-Hand
+### 📸 Screenshots
 
-Gesture
+#### The Cockpit View
 
-Start Game
+<img width="650" height="296" alt="image" src="https://github.com/user-attachments/assets/c29575f6-98a1-42d0-a965-be872be5f60e" />
 
-Any
+#### Hand Tracking in Action
 
-Use your index finger to physically poke the "Start" button.
+<img width="745" height="522" alt="image" src="https://github.com/user-attachments/assets/15f4dafc-bdb3-4d05-9446-2f01208cad9c" />
 
-Accelerate
+#### Task Completion
 
-Right
+<img width="1600" height="699" alt="image" src="https://github.com/user-attachments/assets/5b782a4b-fbe6-4acb-8950-b6c7cab0e2a0" />
 
-Pinch (Thumb + Index). Squeeze tighter to go faster.
+### 🛠️ Technical Implementation
 
-Brake
-
-Right
-
-Open Hand. Release the pinch to apply brakes.
-
-Reverse
-
-Right
-
-Hard Pinch. Squeeze fully (distance ~0) to engage reverse.
-
-Steer
-
-Left
-
-Rotate Wrist. Imagine holding a steering wheel rim. Rotate left/right.
-
-📸 Screenshots
-
-The Cockpit View
-
-<!-- Upload a screenshot from inside the car here -->
-
-Hand Tracking in Action
-
-<!-- Upload a screenshot showing the blue/skeletal hands interacting -->
-
-Smart Parking Zone
-
-<!-- Upload a screenshot of the parking zone turning green or the win screen -->
-
-🛠️ Technical Implementation
-
-Architecture
+#### Architecture
 
 The project follows a decoupled "Engine vs. Driver" architecture to allow for easy debugging:
 
@@ -84,7 +50,7 @@ HandInputController.cs: The VR driver. Reads Oculus SDK data and translates it i
 
 DesktopCarInput.cs: A debug driver. Allows the car physics to be tested on a PC using keyboard arrow keys.
 
-Challenges Solved
+### Challenges Solved
 
 Physics Jitter: Solved by tuning the WheelCollider dampers to 50,000 to counteract the Rigidbody mass.
 
@@ -93,4 +59,14 @@ Ghost Collisions: Fixed the "car falling through floor" bug by removing conflict
 Android Build Crash: Resolved a startup crash on Quest 2 by enforcing ARM64 architecture and removing the Vulkan graphics API.
 
 Input Calibration: Implemented a self-calibrating steering system that sets the initial hand angle as "zero" to prevent drift and ensure comfortable steering.
+
+### 👨‍💻 Developed Using
+
+Engine: Unity 2022.3 (LTS) / Unity 6
+
+Platform: Oculus Quest 2 (Android)
+
+SDK: Meta XR All-in-One SDK / Oculus Integration
+
+### Thank you for checking out DriveVR!
 
