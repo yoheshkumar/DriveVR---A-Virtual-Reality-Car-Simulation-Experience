@@ -22,7 +22,7 @@ Left Hand: Rotate wrist to Steer (Calculates roll angle relative to the horizon)
 
 ### 🎮 How to Play
 
-<img width="788" height="286" alt="image" src="https://github.com/user-attachments/assets/6e0ae5e5-4cf3-4ea7-a87e-6182bbd3f1ea" />
+<img width="683" height="254" alt="image" src="https://github.com/user-attachments/assets/5fa51e21-7449-43bf-bb6f-05b108f6a433" />
 
 ### 📸 Screenshots
 
